@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         saveBtn=(Button)findViewById(R.id.btn_save);
         fetchBtn=(Button)findViewById(R.id.btn_retrive);
 
-
+        System.out.println("This is Room Library demo app");
         empDatabase = Room.databaseBuilder(getApplicationContext(),
                 EmployeeDatabase.class, DATABASE_NAME)
                 .build();
